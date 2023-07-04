@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reg Del edit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.min.css">
+</head>
+<body>
+<div class="main">
+    <div class="main_flash">
+
+    </div>
+    <div class="main_form">
+        <h1>Register</h1>
+        <input class="name" type="text" placeholder="Enter name">
+        <input class="surname" type="text" placeholder="Enter surname">
+        <label class="main_form_password">
+            <input class="password" type="password" placeholder="Enter your password">
+            <i class="eye_reg fa-regular fa-eye"></i>
+        </label>
+        <input class="img" type="text" placeholder="Image link">
+        <label>Popular
+            <input class="popular" type="checkbox">
+        </label>
+        <button class="register_button">Register</button>
+    </div>
+    <div class="main_list">
+    </div>
+    <div class="main_overlay">
+        <div class="main_overlay_item main_form">
+            <i class="close_icon fa-solid fa-xmark"></i>
+            <img class="edit_picture" src="https://images.unsplash.com/photo-1617396900799-f4ec2b43c7ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2FsbHBhcGVyJTIwNGt8ZW58MHx8MHx8&w=1000&q=80"
+                 alt="">
+            <input class="name edit_name" type="text" placeholder="Enter name">
+            <input class="surname edit_surname" type="text" placeholder="Enter surname">
+            <label>
+                <input class="password edit_password" type="password" placeholder="Enter your password">
+                <i class="eye fa-regular fa-eye"></i>
+            </label>
+            <input class="img edit_img" type="text" placeholder="Image link">
+            <label>Popular
+                <input class="edit_checkbox" type="checkbox">
+            </label>
+            <div class="main_overlay_buttons">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

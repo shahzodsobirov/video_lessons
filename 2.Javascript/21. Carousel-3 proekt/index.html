@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+          integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+          crossorigin="anonymous">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Lexend", sans-serif;
+            background-color: #362a2b;
+            color: #e5ebf3;
+        }
+
+        .slider {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: 0.4s ease-in-out;
+        }
+
+        .slide.current {
+            opacity: 1;
+        }
+
+        .slide .content {
+            position: absolute;
+            bottom: -300px;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            background-color: rgba(229, 235, 243, 0.8);
+            color: #495b73;
+            padding: 1rem;
+            line-height: 1.3;
+        }
+
+        .slide .content h1 {
+            margin-bottom: 0.625rem;
+            color: #362a2b;
+            font-size: 1.5rem;
+        }
+
+        .slide.current .content {
+            opacity: 1;
+            transform: translateY(-300px);
+            transition: all 0.7s ease-in-out;
+        }
+
+        .slide:first-child {
+            background: url("https://wallpaperaccess.com/full/1679079.jpg") no-repeat center top/cover;
+        }
+
+        .slide:nth-child(2) {
+            background: url("https://www.supercars.net/blog/wp-content/uploads/2020/09/wallpaperflare.com_wallpaper-1-1.jpg") no-repeat center top/cover;
+        }
+
+        .slide:nth-child(3) {
+            background: url("https://wallpaperaccess.com/full/11207.jpg") no-repeat center top/cover;
+        }
+
+        .slide:nth-child(4) {
+            background: url("https://wallpaperaccess.com/full/1179569.jpg") no-repeat center top/cover;
+        }
+
+        .slide:nth-child(5) {
+            background: url("https://wallpaperaccess.com/full/48909.jpg") no-repeat center top/cover;
+        }
+
+        .slide:nth-child(6) {
+            background: url("https://cutewallpaper.org/21/4k-car-wallpapers/Car-4K-HD-Desktop-Wallpaper-for-4K-Ultra-HD-TV-Tablet-.jpg") no-repeat center center/cover;
+        }
+
+        .buttons button#prev {
+            position: absolute;
+            top: 50%;
+            left: 1rem;
+        }
+
+        .buttons button#next {
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+        }
+
+        .buttons button {
+            border: 2px solid #e5ebf3;
+            background-color: transparent;
+            color: #e5ebf3;
+            cursor: pointer;
+            padding: 13px 15px;
+            border-radius: 50%;
+            outline: none;
+        }
+
+        .buttons button:hover {
+            background-color: #e5ebf3;
+            color: #362a2b;
+        }
+    </style>
+</head>
+<body>
+<div class="slider">
+    <div class="slide current">
+        <div class="content">
+            <h1>Slide One</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+                autem aliquam itaque libero delectus temporibus?
+            </p>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="content">
+            <h1>Slide Two</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+                autem aliquam itaque libero delectus temporibus?
+            </p>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="content">
+            <h1>Slide Three</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+                autem aliquam itaque libero delectus temporibus?
+            </p>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="content">
+            <h1>Slide Four</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+                autem aliquam itaque libero delectus temporibus?
+            </p>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="content">
+            <h1>Slide Five</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+                autem aliquam itaque libero delectus temporibus?
+            </p>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="content">
+            <h1>Slide Six</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+                autem aliquam itaque libero delectus temporibus?
+            </p>
+        </div>
+    </div>
+</div>
+<div class="buttons">
+    <button id="prev"><i class="fas fa-arrow-left"></i></button>
+    <button id="next"><i class="fas fa-arrow-right"></i></button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

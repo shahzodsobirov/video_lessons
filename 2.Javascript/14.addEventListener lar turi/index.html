@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .main {
+            width: 100%;
+            height: 100vh;
+            background-color: crimson;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .button {
+            width: 90px;
+            height: 30px;
+            border-radius: 20px;
+            background-color: dodgerblue;
+            border: none;
+            cursor: pointer;
+            outline: none;
+        }
+        .input{
+            width: 200px;
+            height: 30px;
+            background-color: dodgerblue;
+            border: none;
+        }
+        button:active{
+            transform: scale(0.8);
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <button class="button">Click</button>
+    <input class="input" type="text" placeholder="Enter text">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

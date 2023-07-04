@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        img {
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .carousel {
+            box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+            height: 530px;
+            width: 500px;
+            overflow: hidden;
+        }
+
+        .image-container {
+            display: flex;
+            transform: translateX(0);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .buttons-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn {
+            background-color: rebeccapurple;
+            color: #fff;
+            border: none;
+            padding: 0.5rem;
+            cursor: pointer;
+            width: 49.5%;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+<div class="carousel">
+    <div class="image-container" id="images">
+        <img src="img/2020-ferrari-f8-spyder-101-1593551664.jpg" alt=""/>
+        <img src="img/gate_models_s_02_m.webp" alt=""/>
+        <img src="img/Mercedes-Benz-E-Class-2024-1.jpg" alt=""/>
+        <img src="img/samir-djafarov-5lci.jpg" alt=""/>
+    </div>
+    <div class="buttons-container">
+        <button id="left" class="btn">Prev</button>
+        <button id="right" class="btn">Next</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

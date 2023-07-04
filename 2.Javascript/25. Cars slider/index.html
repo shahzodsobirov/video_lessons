@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .item {
+            transition: 0.5s;
+            text-align: center;
+            font-size: 25px;
+            margin: 10px;
+            border-radius: 15px;
+            color: white;
+            background-size: cover;
+            cursor: pointer;
+            box-shadow: 0 0 0 0 white;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 300px);
+        }
+
+
+        .active {
+            grid-column: 2 span;
+            grid-row: 2 span;
+            cursor: auto;
+            margin: 10px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 25px;
+            background-size: cover;
+            opacity: 0;
+        }
+
+        .opacity_active {
+            transition: 1s all;
+            opacity: 1;
+        }
+
+        .active_slider {
+            transition: 0.5s all;
+            box-shadow: 0 0 10px 10px black;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div style="background-image: url('img/lamborghini-car-lamborghini-aventador-vehicle-wallpaper-preview.jpg')" class="item"></div>
+    <div class="active"></div>
+    <div style="background-image: url('img/25fadfc9107b2f5694f037515afaf07c.jpg')" class="item"></div>
+    <div style="background-image: url('img/36735421673_7d2e84d353_b.jpg')" class="item"></div>
+    <div style="background-image: url('img/568490.jpg')" class="item"></div>
+    <div style="background-image: url('img/4k-car-wallpaper-7.jpg')" class="item"></div>
+</div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
